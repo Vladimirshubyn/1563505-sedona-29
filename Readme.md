@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Владимир Шубин](https://up.htmlacademy.ru/htmlcss/29/user/1563505).
-* Наставник: [Евгений Бервяченок] (https://htmlacademy.ru/profile/jackson).
+* Наставник: [Евгений Бервяченок](https://htmlacademy.ru/profile/jackson).
 
 ---
 
