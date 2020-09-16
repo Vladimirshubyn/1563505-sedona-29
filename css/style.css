@@ -1,0 +1,192 @@
+/* Кастомные свойства */
+
+:root {
+  --basic-white: #FFFFFF;
+  --basic-grey: #EEEEEE;
+  --basic-blue: #81B3D2;
+  --basic-brown: #766357;
+  --basic-black: #000000;
+  --basic-dark-grey: #333333;
+}
+
+/* Общие */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-grey);
+}
+a {
+  text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Навигация */
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  background-color: var(--basic-white);
+}
+.site-navigation {
+  list-style: none;
+}
+.site-navigation-item {
+  color: var(--basic-black);
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 56px;
+}
+
+/* Картинка на главной */
+
+.welcome {
+  height: 509px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-color: var(--basic-white);
+}
+
+/*Список преимуществ*/
+.features {
+  background-color: var(--basic-white);
+}
+.features h3 {
+  font-size: 21px;
+  color: var(--basic-black);
+  text-align: center;
+}
+.features p {
+  text-align: center;
+}
+.features-cards-city {
+  background-color: var(--basic-blue);
+  height: 256px;
+  text-align: center;
+  color: var(--basic-white);
+}
+.features-cards-city img{
+  height: 256px;
+  background-color: var(--basic-blue);
+}
+.features-cards-city h3 {
+  font-size: 21px;
+  line-height: 21px;
+}
+.features-points {
+  background-color: var(--basic-white);
+}
+.features-points-list {
+  list-style: none;
+}
+.features-points-item {
+  text-align: center;
+}
+.features-points-item h3 {
+  font-weight: 700;
+  font-size: 21px;
+  color: var(--basic-black);
+}
+.features-points-item p {
+  color: var(--basic-dark-grey);
+}
+.features-cards-bridge {
+  background-color: var(--basic-blue);
+  height: 256px;
+  text-align: center;
+  color: var(--basic-white);
+}
+.features-cards-bridge img{
+  height: 256px;
+  background-color: var(--basic-blue);
+}
+.features-cards-bridge h3 {
+  font-size: 21px;
+  line-height: 21px;
+}
+.features-other {
+  background-color: var(--basic-grey);
+}
+.features-other-list {
+  text-align: center;
+  list-style: none;
+}
+.features-other-item {
+  text-align: center;
+}
+.features-other-item h3 {
+  font-weight: 700;
+  font-size: 21px;
+  color: var(--basic-black);
+}
+.features-other-item p {
+  color: var(--basic-dark-grey);
+}
+.hotel-search {
+  background-color: var(--basic-white);
+}
+.hotel-search h3 {
+  font-size: 30px;
+  color: var(--basic-black);
+  text-align: center;
+}
+.hotel-search p {
+  text-align: center;
+}
+.hotel-search-form {
+  text-align: center;
+}
+.hotel-search-button {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-decoration: none;
+  color: var(--basic-white);
+  background-color: var(--basic-brown);
+}
+
+/*Футер*/
+
+.page-footer {
+    width: 1200px;
+  height: 120px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.footer-item {
+  vertical-align: middle;
+}
+.footer-hashtag {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+.phone-number {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+.footer-social-buttons {
+
+  vertical-align: top;
+  text-decoration: none;
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+}
+.footer-copyright-title {
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
