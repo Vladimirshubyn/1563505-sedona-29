@@ -7,6 +7,9 @@
   --basic-brown: #766357;
   --basic-black: #000000;
   --basic-dark-grey: #333333;
+  --border-grey: #E5E5E5;
+  --rating-background-grey: #F2F2F2;
+  --rating-grey: #666666;
 }
 
 /* Общие */
@@ -30,6 +33,7 @@ img {
     height: auto;
 }
 
+/*Хэдер*/
 /* Навигация */
 
 .main-navigation {
@@ -48,7 +52,10 @@ img {
   text-decoration: none;
   line-height: 56px;
 }
-
+.site-navigation-item.non-active{
+  color: var(--basic-brown);
+}
+/*Главная*/
 /* Картинка на главной */
 
 .welcome {
@@ -159,7 +166,7 @@ img {
 /*Футер*/
 
 .page-footer {
-    width: 1200px;
+  width: 1200px;
   height: 120px;
   background-color: rgba(255, 255, 255, 0.9);
 }
@@ -189,4 +196,97 @@ img {
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-black);
+}
+
+/*Внутренняя*/
+/*Фильтр отелей*/
+
+.search-hotels-filter {
+  width: 1200px;
+  height: 217px;
+  background-color: var(--basic-blue);
+}
+
+/*Информация о поиске*/
+
+.search {
+  background-color: var(--basic-white);
+  border-bottom: 1px solid var(--border-grey);
+}
+.search-info {
+  font-size: 21px;
+  line-height: 26px;
+}
+.search-sort {
+  list-style: none;
+}
+.search-sort-item {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 18px;
+  border-bottom: 1px dotted var(--basic-blue);
+  color: rgba(0, 0, 15, 0.3);
+}
+.search-sort-item.active {
+  color: var(--basic-blue);
+  border: 0;
+}
+.pointer-arrow {
+  width: 23px;
+  height: 23px;
+  margin: 0px;
+  text-align: center;
+  vertical-align: top;
+  color: #CACACA;
+}
+.pointer-arrow span {
+  font-size: 23px;
+  line-height: 23px;
+}
+.pointers .active {
+  color: var(--basic-blue);
+}
+
+/*Список отелей*/
+
+.search-result {
+  height: 90px;
+  border-bottom: 1px solid var(--border-grey);
+}
+.search-result-cards h2 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+.button-more {
+  height: 26px;
+  line-height: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+}
+.button-booking {
+  height: 26px;
+  font-weight: bold;
+  line-height: 26px;
+  text-decoration: none;
+  color: var(--basic-white);
+  background-color: var(--basic-brown);
+}
+.search-grade {
+  height: 26px;
+  line-height: 26px;
+  color: var(--rating-grey);
+  background-color: var(--rating-background-grey);
+}
+.search-stars {
+  list-style: none;
+  height: 25px;
+  text-align: center;
+  vertical-align: top;
+  text-decoration: none;
+  color: var(--basic-blue);
+  background-color: var(--basic-white);
 }
