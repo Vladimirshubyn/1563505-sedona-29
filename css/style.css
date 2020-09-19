@@ -47,7 +47,6 @@ img {
 .site-navigation-item {
   color: var(--basic-black);
   text-align: center;
-  vertical-align: middle;
   font-weight: 700;
   text-decoration: none;
   line-height: 56px;
@@ -59,7 +58,6 @@ img {
 /* Картинка на главной */
 
 .welcome {
-  height: 509px;
   text-align: center;
   background-repeat: no-repeat;
   background-color: var(--basic-white);
@@ -79,12 +77,10 @@ img {
 }
 .features-cards-city {
   background-color: var(--basic-blue);
-  height: 256px;
   text-align: center;
   color: var(--basic-white);
 }
 .features-cards-city img{
-  height: 256px;
   background-color: var(--basic-blue);
 }
 .features-cards-city h3 {
@@ -110,12 +106,10 @@ img {
 }
 .features-cards-bridge {
   background-color: var(--basic-blue);
-  height: 256px;
   text-align: center;
   color: var(--basic-white);
 }
 .features-cards-bridge img{
-  height: 256px;
   background-color: var(--basic-blue);
 }
 .features-cards-bridge h3 {
@@ -167,11 +161,9 @@ img {
 
 .page-footer {
   width: 1200px;
-  height: 120px;
   background-color: rgba(255, 255, 255, 0.9);
 }
-.footer-item {
-  vertical-align: middle;
+
 }
 .footer-hashtag {
   font-size: 21px;
@@ -186,8 +178,6 @@ img {
   color: var(--basic-black);
 }
 .footer-social-buttons {
-
-  vertical-align: top;
   text-decoration: none;
   color: var(--basic-white);
   background-color: var(--basic-blue);
@@ -202,9 +192,8 @@ img {
 /*Фильтр отелей*/
 
 .search-hotels-filter {
-  width: 1200px;
-  height: 217px;
   background-color: var(--basic-blue);
+  width: 1200px;
 }
 
 /*Информация о поиске*/
@@ -231,12 +220,11 @@ img {
   color: var(--basic-blue);
   border: 0;
 }
+
+/*Стрелки поиска
 .pointer-arrow {
   width: 23px;
-  height: 23px;
-  margin: 0px;
   text-align: center;
-  vertical-align: top;
   color: #CACACA;
 }
 .pointer-arrow span {
@@ -246,11 +234,11 @@ img {
 .pointers .active {
   color: var(--basic-blue);
 }
+*/
 
 /*Список отелей*/
 
 .search-result {
-  height: 90px;
   border-bottom: 1px solid var(--border-grey);
 }
 .search-result-cards h2 {
@@ -260,7 +248,6 @@ img {
   color: var(--basic-black);
 }
 .button-more {
-  height: 26px;
   line-height: 26px;
   font-weight: 700;
   text-decoration: none;
@@ -268,7 +255,6 @@ img {
   background-color: var(--basic-blue);
 }
 .button-booking {
-  height: 26px;
   font-weight: bold;
   line-height: 26px;
   text-decoration: none;
@@ -276,16 +262,13 @@ img {
   background-color: var(--basic-brown);
 }
 .search-grade {
-  height: 26px;
   line-height: 26px;
   color: var(--rating-grey);
   background-color: var(--rating-background-grey);
 }
 .search-stars {
   list-style: none;
-  height: 25px;
   text-align: center;
-  vertical-align: top;
   text-decoration: none;
   color: var(--basic-blue);
   background-color: var(--basic-white);
