@@ -14,12 +14,14 @@
         <a class="main-header-logo" href="index.html">
           <img src="img\logo.svg" width="138" height="70" alt="Логотип Седоны">
         </a>
-        <ul class="site-navigation">
-          <li><a class="site-navigation-item" href="blank.html">Информация</a></li>
-          <li><a class="site-navigation-item" href="blank.html">Фото и видео</a></li>
-          <li><a class="site-navigation-item" href="blank.html">Карта штата</a></li>
-          <li><a class="site-navigation-item non-active">Гостиницы</a></li>
-        </ul>
+        <div class="main-navigation-wrapper">
+          <ul class="site-navigation">
+            <li><a class="site-navigation-item" href="blank.html">Информация</a></li>
+            <li><a class="site-navigation-item" href="blank.html">Фото и видео</a></li>
+            <li><a class="site-navigation-item" href="blank.html">Карта штата</a></li>
+            <li><a class="site-navigation-item non-active" href="hotels.html">Гостиницы</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
 
@@ -32,113 +34,121 @@
       <section class="search">
         <h2 hidden>Доступные отели:</h2>
         <div class="search-info">
-          <p>Найдено:<span>3</span></p>
-          <p>Сортировка:</p>
-          <ul class="search-sort">
-            <li><a class="search-sort-item active">По цене</a></li>
-            <li><a class="search-sort-item" href="#">По типу</a></li>
-            <li><a class="search-sort-item" href="#">По рейтингу</a></li>
-          </ul>
+          <div class="search-found">
+            <p>Найдено:<span>3</span></p>
+          </div>
+          <div class="search-sort">
+            <p>Сортировка:</p>
+            <ul class="search-sort-list">
+              <li><a class="search-sort-item active">По цене</a></li>
+              <li><a class="search-sort-item" href="#">По типу</a></li>
+              <li><a class="search-sort-item" href="#">По рейтингу</a></li>
+            </ul>
+          </div>
           <div class="pointers">
-            <a class="pointer-arrow" href="#"><span class="icon-up"></span></a>
-            <a class="pointer-arrow active" href="#"><span class="icon-down"></span></a>
+            <a href="#" class="pointer-arrow-up"><img src="img\icon-up-dir.svg" alt="По возрастанию"></a>
+            <a href="#" class="pointer-arrow-down"><img src="img\icon-down-dir.svg" alt="По убыванию"></img></a>
           </div>
         </div>
       </section>
       <section class="search-result">
-        <div>
+        <div class="search-result-wrapper">
           <div class="search-result-picture">
-          <img src="img\Amara.jpg" width="135" height="90" alt="Amara Resort & SPA" >
+            <img src="img\Amara.jpg" width="135" height="90" alt="Amara Resort & SPA" >
           </div>
           <div class="search-result-cards">
             <a href="#"><h2>Amara Resort &#38; Spa</h2></a>
             <div><span>Гостиница</span><span>от 4000 р.</span></div>
-          </div>
-          <div class="search-result-buttons">
             <a class="search-result-buttons button-more" href="#">Подробнее</a>
             <a class="search-result-buttons button-booking" href="#">Забронировать</a>
           </div>
+          <div class="search-rating">
+            <ul class="search-stars">
+              <li><img src="img\Star.svg" width="18" height="17" alt=""></li>
+              <li><img src="img\Star.svg" width="18" height="17" alt=""></li>
+              <li><img src="img\Star.svg" width="18" height="17" alt=""></li>
+              <li><img src="img\Star.svg" width="18" height="17" alt="4 звезды"></li>
+              <li><img src="#" width="18" height="17" alt="" hidden></li>
+            </ul>
+            <p class="search-grade">Рейтинг:8,5</p>
+          </div>
         </div>
-        <div class="search-rating">
-          <ul class="search-stars">
-            <li><img src="img\Star.svg" width="18" height="17" alt=""></li>
-            <li><img src="img\Star.svg" width="18" height="17" alt=""></li>
-            <li><img src="img\Star.svg" width="18" height="17" alt=""></li>
-            <li><img src="img\Star.svg" width="18" height="17" alt="4 звезды"></li>
-            <li><img src="#" width="18" height="17" alt="" hidden></li>
-          </ul>
-          <p class="search-grade">Рейтинг:8,5</p>
-        </div>
-        <div>
+        <div class="search-result-wrapper">
           <div class="search-result-picture">
           <img src="img\Desert Quail.jpg" width="135" height="90" alt="Desert Quail Inn">
           </div>
           <div class="search-result-cards">
             <a href="#"><h2>Desert Quail Inn</h2></a>
             <div><span>Мотель</span><span>от 3000 р.</span></div>
-          </div>
-          <div class="search-result-buttons">
             <a class="search-result-buttons button-more" href="#">Подробнее</a>
             <a class="search-result-buttons button-booking" href="#">Забронировать</a>
           </div>
+          <div class="search-rating">
+            <ul class="search-stars">
+              <li><img src="img\Star.svg" width="18" height="17" alt=""></li>
+              <li><img src="img\Star.svg" width="18" height="17" alt=""></li>
+              <li><img src="img\Star.svg" width="18" height="17" alt="3 звезды"></li>
+              <li><img src="#" width="18" height="17" alt="" hidden></li>
+              <li><img src="#" width="18" height="17" alt="" hidden></li>
+            </ul>
+            <p class="search-grade">Рейтинг:8,9</p>
+          </div>
         </div>
-        <div class="search-rating">
-          <ul class="search-stars">
-            <li><img src="img\Star.svg" width="18" height="17" alt=""></li>
-            <li><img src="img\Star.svg" width="18" height="17" alt=""></li>
-            <li><img src="img\Star.svg" width="18" height="17" alt="3 звезды"></li>
-            <li><img src="#" width="18" height="17" alt="" hidden></li>
-            <li><img src="#" width="18" height="17" alt="" hidden></li>
-          </ul>
-          <p class="search-grade">Рейтинг:8,9</p>
-        </div>
-        <div>
+        <div class="search-result-wrapper">
           <div class="search-result-picture">
           <img src="img\Poco Diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo">
           </div>
           <div class="search-result-cards">
             <a href="#"><h2>Villas at Poco Diablo</h2></a>
             <div><span>Апартаменты</span><span>от 2000 р.</span></div>
-          </div>
-          <div class="search-result-buttons">
             <a class="search-result-buttons button-more" href="#">Подробнее</a>
             <a class="search-result-buttons button-booking" href="#">Забронировать</a>
           </div>
+          <div class="search-rating">
+            <ul class="search-stars">
+              <li><img src="img\Star.svg" width="18" height="17" alt=""></li>
+              <li><img src="img\Star.svg" width="18" height="17" alt="2 звезды"></li>
+              <li><img src="#" width="18" height="17" alt="" hidden></li>
+              <li><img src="#" width="18" height="17" alt="" hidden></li>
+              <li><img src="#" width="18" height="17" alt="" hidden></li>
+            </ul>
+            <p class="search-grade">Рейтинг:9,2</p>
+          </div>
         </div>
-        <div class="search-rating">
-          <ul class="search-stars">
-            <li><img src="img\Star.svg" width="18" height="17" alt=""></li>
-            <li><img src="img\Star.svg" width="18" height="17" alt="2 звезды"></li>
-            <li><img src="#" width="18" height="17" alt="" hidden></li>
-            <li><img src="#" width="18" height="17" alt="" hidden></li>
-            <li><img src="#" width="18" height="17" alt="" hidden></li>
-              </ul>
-              <p class="search-grade">Рейтинг:9,2</p>
-            </div>
       </section>
     </main>
 
     <footer class="page-footer">
-      <section class="footer-contacts">
-        <h2 hidden>Контакты</h2>
-        <p>
-          <span class="footer-hashtag">#visitSEDONA</span><br>
-          <span class="phone-number">ТЕЛ: <a href="tel:+74956660166">+7 (495) 666-01-66</a></span>
-        </p>
-      </section>
-      <section class="footer-social footer-item">
-        <h2 hidden>Социальные сети</h2>
-            <a class="footer-social-buttons" href="#"><img src="img\Twitter.svg" width="17" height="17" alt="Twitter"></a>
-            <a class="footer-social-buttons" href="#"><img src="img\Youtube.svg" width="12" height="22" alt="Facebook"></a>
-            <a class="footer-social-buttons" href="#"><img src="img\Facebook.svg" width="20" height="16" alt="Youtube"></a>
-      </section>
-      <section class="footer-copyright footer-item">
-        <h2 hidden>Разработчик сайта</h2>
-        <p>
-          <span class="footer-copyright-title">Website by:</span>
-          <a href="https://htmlacademy.ru"><img src="img\logo-htmlacademy.svg" width="115" height="41" alt="Логотип htmlacademy"></a>
-        </p>
-      </section>
+      <div class="footer-container">
+        <section class="footer-contacts">
+          <h2 hidden>Контакты</h2>
+          <p>
+            <span class="footer-hashtag">#visitSEDONA</span><br>
+            <span class="phone-number">ТЕЛ: <a href="tel:+74956660166">+7 (495) 666-01-66</a></span>
+          </p>
+        </section>
+        <section>
+          <h2 hidden>Социальные сети</h2>
+            <div class="footer-social-buttons-back">
+              <a class="footer-social-buttons footer-social-twitter" href="#"><img src="img\Twitter.svg" width="17" height="17" alt="Twitter"></a>
+            </div>
+            <div class="footer-social-buttons-back">
+              <a class="footer-social-buttons footer-social-facebook" href="#"><img src="img\Facebook.svg" width="12" height="22" alt="Youtube"></a>
+            </div>
+            <div class="footer-social-buttons-back">
+              <a class="footer-social-buttons footer-social-youtube" href="#"><img src="img\Youtube.svg" width="20" height="16" alt="Facebook"></a>
+            </div>
+        </section>
+        <section>
+          <div class="footer-copyright footer-item">
+            <h2 hidden>Разработчик сайта</h2>
+              <p>
+                <span class="footer-copyright-title">Website by:</span>
+                <a href="https://htmlacademy.ru"><img src="img\logo-htmlacademy.svg" width="115" height="41" alt="Логотип htmlacademy"></a>
+              </p>
+          </div>
+          </section>
+        </div>
     </footer>
   </body>
 </html>

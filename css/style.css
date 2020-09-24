@@ -265,15 +265,26 @@ img {
 
 /*Информация о поиске*/
 
+.search-result {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-content: start;
+}
+.search-result-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 .search {
   background-color: var(--basic-white);
   border-bottom: 1px solid var(--border-grey);
 }
 .search-info {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
   font-size: 21px;
   line-height: 26px;
 }
-.search-sort {
+.search-sort-list {
   list-style: none;
 }
 .search-sort-item {
@@ -287,21 +298,11 @@ img {
   color: var(--basic-blue);
   border: 0;
 }
-
-/*Стрелки поиска
-.pointer-arrow {
-  width: 23px;
-  text-align: center;
-  color: #CACACA;
+.pointers {
+  display: grid;
+  padding: 0;
+  margin: 0;
 }
-.pointer-arrow span {
-  font-size: 23px;
-  line-height: 23px;
-}
-.pointers .active {
-  color: var(--basic-blue);
-}
-*/
 
 /*Список отелей*/
 
@@ -334,6 +335,9 @@ img {
   background-color: var(--rating-background-grey);
 }
 .search-stars {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-content: end;
   list-style: none;
   text-align: center;
   text-decoration: none;
