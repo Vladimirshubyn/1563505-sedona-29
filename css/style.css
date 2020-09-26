@@ -10,6 +10,7 @@
   --border-grey: #E5E5E5;
   --rating-background-grey: #F2F2F2;
   --rating-grey: #666666;
+  --body-shadow: #34495e;
 }
 
 /* Общие */
@@ -19,9 +20,8 @@
 }
 .page-body{
   min-height: 100%;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
   align-content: start;
+  background-color: var(--basic-grey);
 }
 body {
   margin: 0;
@@ -50,8 +50,6 @@ img {
   font-size: 14px;
   line-height: 26px;
   background-color: var(--basic-white);
-  margin-left: 40px;
-  margin-right: 40px;
 }
 .main-header-logo {
   z-index: 1;
@@ -62,10 +60,7 @@ img {
   padding: 0;
   list-style: none;
 }
-.main-navigation-wrapper {
-  display: grid;
-  width: 1200px;
-}
+
 .site-navigation-item {
   color: var(--basic-black);
   text-align: center;
@@ -73,22 +68,30 @@ img {
   text-decoration: none;
   line-height: 56px;
 }
-.site-navigation-item.non-active{
+.site-navigation-item:hover {
+  color: var(--basic-blue);
+}
+.site-navigation-item:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+.site-navigation-item.active{
   color: var(--basic-brown);
 }
 /*Главная*/
 /* Картинка на главной */
 .container {
+  align-content: center;
   width: 1200px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 15px 0px var(--body-shadow);
 }
 .welcome {
-  display: grid;
+  margin: 0;
+  padding: 0;
   background-repeat: no-repeat;
-  background-color: var(--basic-blue);
   text-align: center;
-  background-color: var(--basic-white);
+  background-color: #DC6243;
 }
 
 /*Список преимуществ*/
@@ -292,7 +295,14 @@ img {
   font-size: 12px;
   line-height: 18px;
   border-bottom: 1px dotted var(--basic-blue);
-  color: rgba(0, 0, 15, 0.3);
+  color: rgba(0, 0, 0, 0.3);
+}
+.search-sort-item:hover {
+  color: var(--basic-blue);
+}
+.search-sort-item:active {
+  border: 0;
+  color: var(--basic-black);
 }
 .search-sort-item.active {
   color: var(--basic-blue);
@@ -343,4 +353,10 @@ img {
   text-decoration: none;
   color: var(--basic-blue);
   background-color: var(--basic-white);
+}
+.search-result-cards h2:hover {
+  color: var(--basic-blue);
+}
+.search-result-cards h2:active {
+  color: rgba(0, 0, 0, 0.3);
 }
