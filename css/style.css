@@ -46,16 +46,23 @@ img {
 /* Навигация */
 
 .main-navigation {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   font-size: 14px;
   line-height: 26px;
   background-color: var(--basic-white);
 }
 .main-header-logo {
-  z-index: 1;
-  justify-self: center;
+  position: absolute;
+  top: 0;
+	z-index: 1;
+	order: 3;
+	align-self: center;
 }
 .site-navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -88,15 +95,34 @@ img {
   box-shadow: 0px 0px 15px 0px var(--body-shadow);
 }
 .welcome {
-  margin: 0;
-  padding: 0;
-  background-repeat: no-repeat;
+  background-image: url("img/Desert Quail.jpg");
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	min-height: 508px;
+  background-position: 100% 22%;
+	background-repeat: no-repeat;
+	background-size: 100%;
   text-align: center;
   background-color: #DC6243;
 }
+.welcome-words {
+  margin-top: 76px;
+	margin-bottom: 0;
+	padding: 0;
+  z-index: 1;
+  align-self: center;
+}
 
 /*Список преимуществ*/
+
 .features {
+  padding-bottom: 0;
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 216px;
   background-color: var(--basic-white);
 }
 .features h3 {
@@ -108,6 +134,7 @@ img {
   text-align: center;
 }
 .features-cards-city {
+  margin-top: 0;
   display: grid;
   grid-template-columns: 400px 800px;
   background-color: var(--basic-blue);
@@ -194,6 +221,9 @@ img {
 }
 
 .hotel-search {
+  display: flex;
+	flex-direction: column;
+	justify-content: space-between;
   background-color: var(--basic-white);
 }
 .hotel-search h3 {
@@ -220,12 +250,15 @@ img {
 
 .page-footer {
   text-align: center;
-  width: 1200px;
   background-color: rgba(255, 255, 255, 0.9);
 }
 .footer-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  max-height: 120px;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 .footer-hashtag {
   font-size: 21px;
@@ -234,20 +267,39 @@ img {
   color: var(--basic-black);
 }
 .phone-number {
+  text-decoration: none;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color: var(--basic-black);
   padding-bottom: 36px;
 }
+.phone-number a {
+  text-decoration: none;
+  color: var(--basic-black);
+}
+.footer-social {
+  display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	box-sizing: border-box;
+	width: 400px;
+  padding-top: 36px;
+	padding-left: 124px;
+	padding-right: 124px;
+}
 .footer-social-buttons-back {
-  text-align: center;
-  width: 46px;
-  height: 48px;
-  background-color: var(--basic-blue);
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 .footer-social-buttons {
+  text-align: center;
+  top: auto;
+  width: 46px;
+  height: 48px;
   text-decoration: none;
+  align-self: center;
   color: var(--basic-white);
   background-color: var(--basic-blue);
 }
@@ -286,7 +338,13 @@ img {
   font-size: 21px;
   line-height: 26px;
 }
+.search-sort {
+  display: flex;
+  align-content: space-around;
+}
 .search-sort-list {
+  display: flex;
+  align-content: space-between;
   list-style: none;
 }
 .search-sort-item {
@@ -308,7 +366,8 @@ img {
   border: 0;
 }
 .pointers {
-  display: grid;
+  display: flex;
+  flex-direction: row;
   padding: 0;
   margin: 0;
 }
@@ -344,9 +403,9 @@ img {
   background-color: var(--rating-background-grey);
 }
 .search-stars {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  align-content: end;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
   list-style: none;
   text-align: center;
   text-decoration: none;
