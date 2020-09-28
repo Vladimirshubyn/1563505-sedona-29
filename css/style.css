@@ -11,6 +11,7 @@
   --rating-background-grey: #F2F2F2;
   --rating-grey: #666666;
   --body-shadow: #34495e;
+  --background-orange: #DC6243;
 }
 
 /* Общие */
@@ -46,34 +47,50 @@ img {
 /* Навигация */
 
 .main-navigation {
+  position: relative;
   display: flex;
-  flex-direction: column;
+	flex-direction: column;
+	min-height: 56px;
+	margin: 0;
   font-size: 14px;
   line-height: 26px;
   background-color: var(--basic-white);
 }
 .main-header-logo {
   position: absolute;
-  top: 0;
+  transform: translateX(-50%)
+	top: 0;
+	left: 50%;
 	z-index: 1;
-	order: 3;
-	align-self: center;
+  width: 140px;
+  height: 71px;
+  margin-left: -70px;
 }
 .site-navigation {
-  width: 100%;
   display: flex;
-  justify-content: space-around;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  align-items: center;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
-
+.site-navigation li {
+	width: 240px;
+	padding: 0;
+  padding-left: 72px;
+}
 .site-navigation-item {
   color: var(--basic-black);
-  text-align: center;
   font-weight: 700;
+  text-align: center;
   text-decoration: none;
   line-height: 56px;
+}
+.site-navigation li:nth-child(3) {
+	margin-left: 96px;
+	align-self: right;
+}
+.site-navigation li:nth-child(4) {
+	align-self: right;
 }
 .site-navigation-item:hover {
   color: var(--basic-blue);
@@ -95,24 +112,19 @@ img {
   box-shadow: 0px 0px 15px 0px var(--body-shadow);
 }
 .welcome {
-  background-image: url("img/Desert Quail.jpg");
+  background-image: url("../img/background_photo.jpg");
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: flex-start;
 	min-height: 508px;
   background-position: 100% 22%;
 	background-repeat: no-repeat;
 	background-size: 100%;
   text-align: center;
-  background-color: #DC6243;
+  background-color: var(--background-orange);
 }
 .welcome-words {
   margin-top: 76px;
-	margin-bottom: 0;
-	padding: 0;
-  z-index: 1;
-  align-self: center;
 }
 
 /*Список преимуществ*/
@@ -326,21 +338,29 @@ img {
 }
 .search-result-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 .search {
   background-color: var(--basic-white);
   border-bottom: 1px solid var(--border-grey);
 }
+.search-found p {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
 .search-info {
   display: grid;
   grid-template-columns: 2fr 2fr 1fr;
-  font-size: 21px;
-  line-height: 26px;
 }
 .search-sort {
   display: flex;
   align-content: space-around;
+}
+.search-sort p {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 18px;
 }
 .search-sort-list {
   display: flex;
@@ -377,6 +397,13 @@ img {
 .search-result {
   border-bottom: 1px solid var(--border-grey);
 }
+.search-result-cards {
+  display: flex;
+}
+.search-result-text {
+  display: flex;
+  flex-direction: column;
+}
 .search-result-cards h2 {
   font-size: 21px;
   line-height: 26px;
@@ -397,8 +424,22 @@ img {
   color: var(--basic-white);
   background-color: var(--basic-brown);
 }
+.search-rating {
+  display: flex;
+  flex-direction: column;
+}
+.grade {
+  position: relative;
+	width: 241px;
+	margin-bottom: 0;
+	margin-right: 73px;
+	margin-left: auto;
+}
 .search-grade {
-  line-height: 26px;
+  width: 92px;
+	margin-left: auto;
+	font-size: 14px;
+  line-height: 21px;
   color: var(--rating-grey);
   background-color: var(--rating-background-grey);
 }
