@@ -594,14 +594,15 @@ img {
 }
 /*Внутренняя*/
 /*Фильтр отелей*/
-
+.main-filter {
+}
 .hotel-filter {
 	position: relative;
   background-image: url("../img/background-blurred.png");
   background-color: var(--social-hover-blue);
+  min-height: 217px;
 	display: flex;
 	box-sizing: border-box;
-	min-height: 160px;
 	margin: auto;
 	padding: 0 72px;
 }
@@ -649,7 +650,7 @@ img {
 .filter-item {
 	position: relative;
 	min-height: 23px;
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 }
 .filter-item input[type="checkbox"] {
 	display: none;
@@ -711,6 +712,7 @@ img {
   transform: translate(-50%, -50%);
 }
 .price-controls label {
+  min-height: 36px;
   display: inline-block;
   font-size: 14px;
   line-height: 38px;
@@ -725,8 +727,9 @@ img {
 }
 .price-controls input {
   width: 50px;
+  height: 30px;
   margin: 0;
-  padding-bottom: 9px;
+  padding-bottom: 0;
   color: var(--basic-white);
   background: none;
   border: none;
@@ -788,16 +791,19 @@ img {
   background-color: var(--basic-white);
   border-bottom: 1px solid var(--border-grey);
 }
+.search-info {
+  display: flex;
+  align-items: center;
+  padding-left: 72px;
+  padding-right: 72px;
+  min-height: 86px;
+  box-sizing: border-box;
+}
 .search-found p {
-  margin-left: 72px;
-	margin-right: 0;
+	margin-right: 35px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-}
-.search-info {
-  display: grid;
-  grid-template-columns: 180px 1fr 2fr;
 }
 .search-title {
   text-decoration: none;
@@ -806,12 +812,18 @@ img {
 }
 .search-sort-list {
   display: flex;
-	align-items: flex-start;
+	align-items: center;
   justify-content: space-around;
-	margin-left: 46px;
+	margin-left: 16px;
 	margin-right: 0;
 	padding: 0;
 	list-style: none;
+}
+.search-title {
+  margin-right: 15px;
+}
+.search-sort-item {
+  margin-left: 30px;
 }
 .search-sort-item:not(.search-title) {
   text-decoration: none;
@@ -832,11 +844,8 @@ img {
   border: 0;
 }
 .pointers {
-  position: absolute;
-	right: 112px;
-  transform: translateY(26px);
+  margin-left: auto;
   display: flex;
-  margin-right: 24px;
 }
 .pointer-arrow-up {
   transform: rotate(180deg);
@@ -859,34 +868,38 @@ img {
 
 /*Список отелей*/
 .search-result {
-  min-height: 454px;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  align-content: start;
+  min-height: 453px;
 }
 .search-result-wrapper {
   display: flex;
+  align-items: center;
+  padding-left: 72px;
+  padding-right: 72px;
 	min-height: 150px;
+  max-height: 150px;
   border-bottom: 1px solid var(--border-grey);
+  box-sizing: border-box;
 }
 .search-result-cards {
   display: flex;
+  align-items: center;
+  padding-top: 5px;
 }
-.search-result-text:not(.cards-title) {
+.search-result-text {
   display: flex;
   flex-direction: column;
   width: 277px;
-	min-height: 92px;
-	margin-top: 6px;
 	padding: 0;
 }
+.search-result-text a {
+  height: 26px;
+  margin-bottom: 30px;
+}
+.search-result-text-price {
+  margin-bottom: 5px;
+}
 .hotel-page {
-	width: 135px;
-	height: 90px;
-	margin-top: 30px;
-	margin-bottom: 0;
-	margin-left: 72px;
-	margin-right: 30px;
+  margin-right: 29px;
 }
 .search-result-cards h2 {
   font-size: 21px;
@@ -937,9 +950,16 @@ img {
   color: rgba(255, 255, 255, 0.3);
   background-color: var(--hotel-button-dark);
 }
+.search-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+	width: 241px;
+  padding-top: 40px;
+  padding-bottom: 35px;
+	margin-left: auto;
+}
 .search-stars {
-  position: relative;
-  transform: translateY(-20px);
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-end;
@@ -948,21 +968,15 @@ img {
   text-decoration: none;
   color: var(--basic-blue);
   background-color: var(--basic-white);
+  padding-bottom: 20px;
 }
-.search-rating {
-  position: relative;
-	width: 241px;
-	margin-top: 30px;
-	margin-bottom: 0;
-	margin-right: 73px;
-	margin-left: auto;
+.search-stars img {
+  margin-left: 6px;
 }
 .search-grade {
-  position: relative;
-  transform: translateY(-40px);
   display: block;
   width: 92px;
-	margin-top: 59px;
+	margin-top: 5px;
 	margin-left: auto;
 	padding: 6px 4px 4px 15px;
 	font-size: 14px;
