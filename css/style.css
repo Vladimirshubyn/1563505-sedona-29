@@ -945,6 +945,8 @@ img {
 .button-booking:hover,
 .button-booking:focus {
   color: var(--basic-white);
+  background-color: var(--hotel-button-brown);
+
 }
 .button-booking:active {
   color: rgba(255, 255, 255, 0.3);
