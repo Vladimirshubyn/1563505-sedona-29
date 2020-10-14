@@ -355,7 +355,7 @@ img {
 	margin-right: auto;
 	background: var(--basic-white);
 }
-.modal .hotel-search-button {
+.hotel-search-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -377,12 +377,12 @@ img {
 	background-color: var(--basic-brown);
 	border: none;
 }
-.modal .hotel-search-button:hover,
-.modal .hotel-search-button:focus {
+.hotel-search-button:hover,
+.hotel-search-button:focus {
   color: var(--basic-white);
 	background-color: var(--hotel-button-brown);
 }
-.modal .hotel-search-button:active {
+.hotel-search-button:active {
   color: rgba(255, 255, 255, 0.3);
 	background-color: var(--hotel-button-dark);
 }
@@ -406,6 +406,25 @@ img {
 	background-color: var(--basic-white);
   -webkit-box-shadow: 0px 0px 5px 0px var(--body-shadow);
   box-shadow: 0px 0px 5px 0px var(--body-shadow);
+  display: none;
+}
+@keyframes shake {
+  0%, 100% {transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90%  {transform: translateX(-10px); }
+  20%, 40%, 60%, 80% {transform: translateX(10px); }
+}
+@keyframes bounce {
+  0% {transform: translateY(0); }
+  50% {transform: translateY(70px); }
+  80% {transform: translateY(-50px); }
+  100% {transform: translateY(0); }
+  }
+.search-hotel-show {
+  display: block;
+  animation: bounce 0.7s;
+}
+.modal-error {
+  animation: shake 0.6s;
 }
 .search-item {
 	position: relative;
