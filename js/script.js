@@ -1,19 +1,19 @@
 const link = document.querySelector(".hotel-search-button");
-const popup = document.querySelector(".search-hotel-form");
+const popup = document.querySelector(".modal-search");
 const form = document.querySelector(".search-form");
 const arrival = popup.querySelector("[name=start-date]");
 const departure = popup.querySelector("[name=end-date]");
 
 link.addEventListener("click", function (evt) {
     evt.preventDefault();
-    popup.classList.add("search-hotel-show");
+    popup.classList.toggle("modal-show");
     arrival.focus();
 });
 
 window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
-        if (popup.classList.contains("search-hotel-show")) {
-            popup.classList.remove("search-hotel-show");
+        if (popup.classList.contains("modal-show")) {
+            popup.classList.remove("modal-show");
             popup.classList.remove("modal-error");
         }
     }

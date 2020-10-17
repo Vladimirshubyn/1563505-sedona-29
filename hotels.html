@@ -34,15 +34,15 @@
       						<legend class="filter-column-name">Инфраструктура:</legend>
       						<ul class="filter-list">
       							<li class="filter-item">
-      								<input id="filter-pool" type="checkbox" name="pool" checked>
+      								<input class="checkbox-checked" id="filter-pool" type="checkbox" name="pool" checked>
       								<label for="filter-pool" class="filter-item-name active">Бассейн</label>
       							</li>
       							<li class="filter-item">
-      								<input id="filter-parking" type="checkbox" name="parking">
+      								<input class="checkbox-unchecked" id="filter-parking" type="checkbox" name="parking">
       								<label for="filter-parking" class="filter-item-name">Парковка</label>
       							</li>
       							<li class="filter-item">
-      								<input id="filter-wi-fi" type="checkbox" name="Wi-Fi">
+      								<input class="checkbox-unchecked" id="filter-wi-fi" type="checkbox" name="Wi-Fi">
       								<label for="filter-wi-fi" class="filter-item-name">Wi-Fi</label>
       							</li>
       						</ul>
@@ -53,15 +53,15 @@
       						<legend class="filter-column-name">Тип жилья:</legend>
       						<ul class="filter-list">
       							<li class="filter-item">
-      								<input id="filter-hotel" type="checkbox" name="hotel" checked>
+      								<input class="checkbox-checked" id="filter-hotel" type="checkbox" name="hotel" checked>
       								<label for="filter-hotel" class="filter-item-name active">Гостиница</label>
       							</li>
       							<li class="filter-item">
-      								<input id="filter-motel" type="checkbox" name="motel" checked>
+      								<input class="checkbox-checked" id="filter-motel" type="checkbox" name="motel" checked>
       								<label for="filter-motel" class="filter-item-name active">Мотель</label>
       							</li>
       							<li class="filter-item">
-      								<input id="filter-apartment" type="checkbox" name="apartment" checked>
+      								<input class="checkbox-checked" id="filter-apartment" type="checkbox" name="apartment" checked>
       								<label for="filter-apartment" class="filter-item-name active">Апартаменты</label>
       							</li>
       						</ul>
@@ -96,17 +96,17 @@
                 <ul class="search-sort-list">
                   <li class="search-title">Сортировка:</li>
                   <li><a class="search-sort-item active">По цене</a></li>
-                  <li><a class="search-sort-item" href="#">По типу</a></li>
-                  <li><a class="search-sort-item" href="#">По рейтингу</a></li>
+                  <li><a href="#" class="search-sort-item">По типу</a></li>
+                  <li><a href="#" class="search-sort-item">По рейтингу</a></li>
                 </ul>
               </div>
               <div class="pointers">
-                <a href="#" class="pointer-arrow-up">
+                <a href="#" aria-label="Упорядочить по возрастанию" class="pointer-arrow-up">
                   <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
                     <polyline fill="#cacaca" points="5.5,10 0,0 11,0 "/>
                   </svg>
                 </a>
-                <a href="#" class="pointer-arrow-down">
+                <a href="#" aria-label="Упорядочить по убыванию" class="pointer-arrow-down">
                   <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
                     <polyline fill="#81b3d2" points="5.5,10 0,0 11,0 "/>
                   </svg>
@@ -122,8 +122,8 @@
                   <a href="#"><h2 class="cards-title">Amara Resort &#38; Spa</h2></a>
                   <div class="search-result-text-price"><span>Гостиница</span><span>&nbsp;от 4000 р.</span></div>
                   <div class="search-buttons-wrapper">
-                    <a class="search-result-buttons button-more" href="#">Подробнее</a>
-                    <a class="search-result-buttons button-booking" href="#">Забронировать</a>
+                    <a href="#" class="search-result-buttons button-more">Подробнее</a>
+                    <a href="#" class="search-result-buttons button-booking">Забронировать</a>
                   </div>
                 </div>
               </div>
@@ -145,8 +145,8 @@
                   <a href="#"><h2 class="cards-title">Desert Quail Inn</h2></a>
                   <div class="search-result-text-price"><span>Мотель</span><span>&nbsp;от 3000 р.</span></div>
                   <div class="search-buttons-wrapper">
-                    <a class="search-result-buttons button-more" href="#">Подробнее</a>
-                    <a class="search-result-buttons button-booking" href="#">Забронировать</a>
+                    <a href="#" class="search-result-buttons button-more">Подробнее</a>
+                    <a href="#" class="search-result-buttons button-booking">Забронировать</a>
                   </div>
                 </div>
               </div>
@@ -170,8 +170,8 @@
                   <a href="#"><h2 class="cards-title">Villas at Poco Diablo</h2></a>
                   <div class="search-result-text-price"><span>Апартаменты</span><span>&nbsp;от 2000 р.</span></div>
                   <div class="search-buttons-wrapper">
-                    <a class="search-result-buttons button-more" href="#">Подробнее</a>
-                    <a class="search-result-buttons button-booking" href="#">Забронировать</a>
+                    <a href="#" class="search-result-buttons button-more">Подробнее</a>
+                    <a href="#" class="search-result-buttons button-booking">Забронировать</a>
                   </div>
                 </div>
               </div>

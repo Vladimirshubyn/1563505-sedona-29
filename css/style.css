@@ -24,6 +24,7 @@
   --toggle-hover-grey: #1c4f80;
   --calendar-grey: #cacaca;
   --map-background-green: #b7cf8a;
+  --filter-disabled: #6A6A6A;
 }
 
 /* Общие */
@@ -288,6 +289,8 @@ img {
   margin-bottom: 51px;
 }
 .features-other {
+  position: relative;
+  z-index: 2;
   background-color: var(--basic-grey);
   margin-top: 0;
   min-height: 256px;
@@ -324,6 +327,8 @@ img {
 	background-repeat: no-repeat;
 }
 .hotel-search {
+  position: relative;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -349,13 +354,14 @@ img {
 }
 
 /*Форма поиска Гостиницы*/
-.modal {
-	min-height: 557px;
+.search-hotel {
 	margin-left: auto;
 	margin-right: auto;
 	background: var(--basic-white);
 }
 .hotel-search-button {
+  position: relative;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -376,6 +382,7 @@ img {
 	color: var(--basic-white);
 	background-color: var(--basic-brown);
 	border: none;
+  cursor: pointer;
 }
 .hotel-search-button:hover,
 .hotel-search-button:focus {
@@ -386,10 +393,14 @@ img {
   color: rgba(255, 255, 255, 0.3);
 	background-color: var(--hotel-button-dark);
 }
-.search-hotel-form {
+.modal-search {
+  position: absolute;
+  left: 316px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+  justify-content: center;
+  align-items: center;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -406,22 +417,16 @@ img {
 	background-color: var(--basic-white);
   -webkit-box-shadow: 0px 0px 5px 0px var(--body-shadow);
   box-shadow: 0px 0px 5px 0px var(--body-shadow);
-  display: none;
+  margin-top: -500px;
+  transition: all 0.6s;
 }
 @keyframes shake {
   0%, 100% {transform: translateX(0); }
   10%, 30%, 50%, 70%, 90%  {transform: translateX(-10px); }
   20%, 40%, 60%, 80% {transform: translateX(10px); }
 }
-@keyframes bounce {
-  0% {transform: translateY(0); }
-  50% {transform: translateY(70px); }
-  80% {transform: translateY(-50px); }
-  100% {transform: translateY(0); }
-  }
-.search-hotel-show {
-  display: block;
-  animation: bounce 0.7s;
+.modal-show {
+  margin-top: 0;
 }
 .modal-error {
   animation: shake 0.6s;
@@ -803,15 +808,9 @@ img {
 }
 .filter-item input[type="checkbox"] {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .filter-item-name {
 	padding-left: 40px;
@@ -833,6 +832,19 @@ img {
 .filter-item input[type="checkbox"]:checked ~ label::before {
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
+}
+.filter-item .checkbox-checked:disabled ~ label::before {
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+.filter-item .checkbox-unchecked:disabled ~ label::before {
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+.filter-item input[type="checkbox"]:focus ~ label::before {
+  border: 1px solid var(--basic-white);
 }
 .options-price {
 	-webkit-box-sizing: border-box;
@@ -921,6 +933,8 @@ img {
   cursor: pointer;
 }
 .range-toggle:hover {
+  width: 6px;
+  height: 6px;
   background: var(--toggle-hover-grey);
 }
 .range-toggle-min {
@@ -1100,13 +1114,25 @@ img {
   font-weight: 700;
   color: var(--basic-black);
 }
+.search-buttons-wrapper {
+  display: flex;
+}
+.search-result-buttons {
+  display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
 .button-more {
-  display: inline-block;
 	margin-top: 0px;
 	padding: 4px 17px;
 	padding-bottom: 3px;
-	text-align: center;
-	vertical-align: middle;
+  margin-right: 6px;
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: 700;
@@ -1123,12 +1149,9 @@ img {
   background-color: var(--social-active-blue);
 }
 .button-booking {
-  display: inline-block;
 	margin-top: 0px;
 	padding: 4px 17px;
 	padding-bottom: 3px;
-	text-align: center;
-	vertical-align: middle;
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: 700;
