@@ -222,7 +222,6 @@ img {
 }
 .features-cards-city {
   min-height: 256px;
-  margin-top: 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 400px 800px;
@@ -239,8 +238,7 @@ img {
   line-height: 21px;
 }
 .features-cards-city-text {
-  padding-top: 25px;
-  max-height: 256px;
+  margin-top: 25px;
 }
 .features-numbers {
   padding-top: 10px;
@@ -774,6 +772,7 @@ img {
 /*Фильтр отелей*/
 
 .hotel-filter {
+  background-size: cover;
   position: relative;
   background-image: url("../img/background-blurred.png");
   background-color: var(--social-hover-blue);
@@ -1110,7 +1109,6 @@ img {
   padding-left: 72px;
   padding-right: 72px;
   min-height: 150px;
-  max-height: 150px;
   border-bottom: 1px solid var(--border-grey);
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1227,8 +1225,6 @@ img {
   -ms-flex-align: stretch;
   align-items: stretch;
   width: 241px;
-  padding-top: 40px;
-  padding-bottom: 35px;
   margin-left: auto;
 }
 .search-stars {
