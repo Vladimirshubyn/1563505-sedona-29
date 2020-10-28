@@ -670,7 +670,7 @@ img {
 }
 .phone-number {
   margin-top: 10px;
-  margin-bottom: 13px;
+  margin-bottom: 15px;
   text-decoration: none;
   font-size: 21px;
   line-height: 26px;
@@ -705,7 +705,7 @@ img {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 300px;
-  margin-top: 16px;
+  margin-top: 12px;
   margin-left: 3px;
   margin-right: 30px;
   list-style: none;
@@ -746,7 +746,7 @@ img {
   -ms-flex-align: center;
   align-items: center;
   width: 240px;
-  margin-top: 3px;
+  margin-top: 1px;
   margin-right: 70px;
   margin-left: 120px;
 }
@@ -1120,7 +1120,11 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 5px;
+  margin-left: 1px;
+  margin-top: 5px;
+}
+.card-first {
+  margin-bottom: 1px;
 }
 .search-result-text {
   display: -webkit-box;
@@ -1132,14 +1136,16 @@ img {
   flex-direction: column;
   width: 277px;
   padding: 0;
+  margin-bottom: 27px;
 }
 .search-result-text a {
-  height: 26px;
-  margin-bottom: 25px;
+  min-height: 26px;
+  margin-top: 0;
 }
 .search-result-text-price {
   color: var(--basic-dark-grey);
-  margin-bottom: 3px;
+  margin-top: 0;
+  margin-bottom: 7px;
 }
 .search-result-hotel {
   margin-right: 35px;
@@ -1158,26 +1164,23 @@ img {
   line-height: 26px;
   font-weight: 700;
   color: var(--basic-black);
+  margin-top: 18px;
+  margin-bottom: 5px;
 }
 .search-buttons-wrapper {
   display: flex;
+  margin-top: 7px;
 }
 .search-result-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  line-height: 21px;
 }
 .button-more {
-  margin-top: 9px;
   padding: 4px 17px;
-  padding-bottom: 0;
   margin-right: 6px;
   font-size: 14px;
   line-height: 21px;
@@ -1195,9 +1198,7 @@ img {
   background-color: var(--social-active-blue);
 }
 .button-booking {
-  margin-top: 9px;
   padding: 4px 17px;
-  padding-bottom: 0;
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
